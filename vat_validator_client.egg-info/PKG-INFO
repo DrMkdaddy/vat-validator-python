@@ -1,0 +1,73 @@
+Metadata-Version: 2.4
+Name: vat-validator-client
+Version: 1.0.0
+Summary: Deterministic offline checksum validator for EU-27 and UK VAT numbers with instant 2026 standard and reduced tax rate lookups.
+Author: RapidAPI Microservices Portfolio
+License-Expression: MIT
+Project-URL: Homepage, https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/eu-uk-vat-validator-rate-engine
+Project-URL: Documentation, https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/eu-uk-vat-validator-rate-engine
+Project-URL: Source, https://github.com/DrMkdaddy/vat-validator-python
+Keywords: vat,vies,eu-vat,uk-vat,tax-id,tin,tax-rates,cross-border,taxation
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# EU & UK VAT Validator & Rate Engine — Python Client
+
+[![PyPI version](https://img.shields.io/pypi/v/vat-validator-client.svg)](https://pypi.org/project/vat-validator-client/)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/57865358-8bafe64c-1441-4fe3-ba7a-2d60bdeb7dc5)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![RapidAPI Listing](https://img.shields.io/badge/RapidAPI-Dedicated%20Listing-blueviolet)](https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/eu-uk-vat-validator-rate-engine)
+
+Official zero-dependency Python client for **EU & UK VAT Validator & Rate Engine**.
+
+> Deterministic offline checksum validator for EU-27 and UK VAT numbers with instant 2026 standard & reduced tax rate lookups.
+
+> 🔑 **Get your Dedicated API Key:** [Subscribe to EU & UK VAT Validator & Rate Engine on RapidAPI](https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/eu-uk-vat-validator-rate-engine)
+
+---
+
+## 🚀 Installation
+
+```bash
+pip install vat-validator-client
+```
+
+---
+
+## ⚡ Quickstart
+
+```python
+from vat_validator_client import VatValidatorClient
+
+# Zero config for sandbox testing, or pass your RapidAPI key for production
+client = VatValidatorClient(api_key="YOUR_RAPIDAPI_KEY")
+
+result = client.validate({
+    # Enter validation payload
+})
+
+print(result)
+```
+
+---
+
+## 📚 API Reference
+
+### `VatValidatorClient(api_key=..., base_url=...)`
+- `api_key` *(optional)*: RapidAPI Key (`x-rapidapi-key`).
+- `base_url` *(optional)*: Direct edge worker override URL.
+
+### `client.validate(payload)`
+Dispatches standard validation / parse request with sub-5ms latency.
+
+### `client.get_health()`
+Checks edge isolate health and responsiveness.
+
+---
+
+## 🔗 Links
+- 📖 [RapidAPI Documentation & Key](https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/eu-uk-vat-validator-rate-engine)
+
+## 📄 License
+MIT © RapidAPI Microservices Portfolio

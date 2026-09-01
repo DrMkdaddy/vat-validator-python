@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vat-validator-client"
+version = "1.0.0"
+description = "Official zero-dependency Python client for EU & UK VAT Validator & Rate Engine via RapidAPI"
+readme = "README.md"
+authors = [{ name = "Noor Mkdad" }]
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+keywords = ["vat","vies","eu-vat","uk-vat","tax-rate","moss-oss","invoicing","cross-border-tax","vat-number"]
+dependencies = []
+
+[project.urls]
+"Homepage" = "https://noormkdad.com/tools/vat-validator"
+"Documentation" = "https://noormkdad.com/tools/vat-validator"
+"Marketplace" = "https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/eu-uk-vat-validator-rate-engine"
+"Source" = "https://github.com/DrMkdaddy/vat-validator-python"

@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+vat_validator_client/__init__.py
+vat_validator_client.egg-info/PKG-INFO
+vat_validator_client.egg-info/SOURCES.txt
+vat_validator_client.egg-info/dependency_links.txt
+vat_validator_client.egg-info/top_level.txt
